@@ -82,12 +82,11 @@ public class PlantBeraksi {
     }
     
     public String getImagePath(){
-        String tImagePath = "img/seed.png";
+        String tImagePath = "/plant/bijii1.png";
         switch(statusTumbuh){
-            case 0:tImagePath="img/seed.png";break;
-            case 1:tImagePath="img/sprout.png";break;
-            case 2:tImagePath="img/big.png";break;
-            case 3:tImagePath="img/blossom.png";break;
+            case 0:tImagePath="/plant/bijii1.png";break;
+            case 1:tImagePath="/plant/tumbuhh.png";break;
+            case 2:tImagePath="/plant/bungaa.png";break;
             
         }
         return tImagePath;
