@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package garden;
+package plant;
 
 import javax.swing.*;
 import java.awt.*;
@@ -14,7 +14,7 @@ import java.lang.Thread;
  *
  * @author User
  */
-public class PlantMainSwing {
+public class plantmainswing {
     private int jenis;
     private String namaJenis;
     private JFrame frame;
@@ -30,10 +30,10 @@ public class PlantMainSwing {
     private JTextField txtJenis;
     private JTextField txtDisplay;
     private ImageIcon plantIcon;
-    private Plant p;
-public PlantMainSwing()
+    private PlantBeraksi p;
+public plantmainswing()
 {
-    p = new Plant();
+    p = new PlantBeraksi();
     createAndShowGUI();
     setPlantImage();
 }
@@ -44,9 +44,9 @@ private void createAndShowGUI()
     frame.setLayout(null);
     //Masukkan background
     JLabel background = new JLabel("");
-    ImageIcon gambar = createImageIcon("/garden/background.png","gambar");
+    ImageIcon gambar = createImageIcon("/plant/background.png","gambar");
     background.setIcon(gambar);
-    background.setBounds(300,200,600,800);
+    background.setBounds(200,100,500,700);
     frame.setContentPane(background); //menambah content ke frame
     
     txtJenis = new JTextField("");
@@ -227,8 +227,8 @@ private void createAndShowGUI()
     Runnable(){
         @Override
     public void run(){
-    PlantMainSwing uGardenApp = new
-    PlantMainSwing();
+    plantmainswing uGardenApp = new
+    plantmainswing();
     }
     });
     }
